@@ -67,7 +67,7 @@ Next the DistillBERT model was trained on that data. The model was also suppleme
 
 > The data preparation workflow and trainging are stored in this [repo](https://github.com/0rd0s1n1ster/gpt_text_detection)
 
-![The workflow](images/Screenshot1233222.jpg)
+![The workflow](supplementary_images_gpt_detection/workflow.jpg)
 Figure 2. *The worflow*
 
 <script src="https://gist.github.com/0rd0s1n1ster/39e8c25374c0799ba8907d5ff623eaf9.js"></script>
@@ -78,7 +78,7 @@ The work resulted in a useful tool that can detect GPT-written text in Bachelor'
 
 In the future dataset can be enhanced with more works to improve generalizing, since figure 3 indicates that there can be an overfit even after 2 epochs, while figure 4 indicates that accuracy was still growing so the chances of overfit are lower.
 
-|![train val graph loss](images/train_val.svg)|![accuracy graph](images/acc_val.svg)|
+|![train val graph loss](supplementary_images_gpt_detection/train_val.svg)|![accuracy graph](supplementary_images_gpt_detection/validation_accuracy.svg)|
 |--|--|
 |Figure 3. *Train val loss graph*| Figure 4. *Validation accuracy graph*
 ---
