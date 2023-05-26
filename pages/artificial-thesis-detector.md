@@ -51,7 +51,7 @@ The dataset contains 2472 rows with human written data and 2472 rows of GPT-3.5 
   3) After the text was obtained it was cut in 150 words chunks with overlap from different these. It was then sent to OpenAI GPT-3.5 turbo model using the API key. The exact prompt was: "Rephrase to avoid plagiarism: {{ 150 words chunk }}". 
   4) Following that, both human and GPT generated data were  stored in [hugginface dataest](https://huggingface.co/docs/datasets/index) and below the statistics on the distribution of the data for both human-written and GPT-generated data.
 
-![Dataset spread](images/combined_count.svg)
+![Dataset spread](images/supplementary_images_gpt_detection/combined_words_count.svg)
 Figure 1. *Dataset distribution*
 
 The resulting dataset is a relational format table in a form:
@@ -67,7 +67,7 @@ Next the DistillBERT model was trained on that data. The model was also suppleme
 
 > The data preparation workflow and trainging are stored in this [repo](https://github.com/0rd0s1n1ster/gpt_text_detection)
 
-![The workflow](supplementary_images_gpt_detection/workflow.jpg)
+![The workflow](images/supplementary_images_gpt_detection/workflow.jpg)
 Figure 2. *The worflow*
 
 <script src="https://gist.github.com/0rd0s1n1ster/39e8c25374c0799ba8907d5ff623eaf9.js"></script>
@@ -78,7 +78,7 @@ The work resulted in a useful tool that can detect GPT-written text in Bachelor'
 
 In the future dataset can be enhanced with more works to improve generalizing, since figure 3 indicates that there can be an overfit even after 2 epochs, while figure 4 indicates that accuracy was still growing so the chances of overfit are lower.
 
-|![train val graph loss](supplementary_images_gpt_detection/train_val.svg)|![accuracy graph](supplementary_images_gpt_detection/validation_accuracy.svg)|
+|![train val graph loss](images/supplementary_images_gpt_detection/train_val.svg)|![accuracy graph](images/supplementary_images_gpt_detection/validation_accuracy.svg)|
 |--|--|
 |Figure 3. *Train val loss graph*| Figure 4. *Validation accuracy graph*
 ---
