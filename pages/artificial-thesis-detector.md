@@ -72,8 +72,8 @@ Figure 2. *The worflow*
 
 ## Chat-GPT promts that  I found useful
 
-{ artificialthesisdetectiongit
-  src="https://gist.github.com/0rd0s1n1ster/39e8c25374c0799ba8907d5ff623eaf9.js" }
+{% artificialthesisdetectiongit
+  src="https://gist.github.com/0rd0s1n1ster/39e8c25374c0799ba8907d5ff623eaf9.js" /%}
 
 ## Check out the demo youself
 > Let me know how good does it work by pressing like and dislike in the interface after each prediction.
