@@ -30,3 +30,4 @@ export { default as typewriter } from './typewriter.markdoc';
 export { default as youtube } from './youtube.markdoc';
 export { default as figma } from './figma.markdoc';
 export { default as artificialthesisdetectiongit } from './artificialthesisdetectiongit.markdoc';
+export { default as artificialthesisdetectionedemo } from './artificialthesisdetectiondemo.markdoc';
