@@ -1,7 +1,7 @@
-import { ArtificialThesisDetectionGit } from '../../components/ArtificialThesisDetectionGit.js';
+import { ArtificialThesisDetectionDemo } from '../../components/ArtificialThesisDetectionDemo.js';
 
 export default {
-  render: ArtificialThesisDetectionGit,
+  render: ArtificialThesisDetectionDemo,
   attributes: {
     src: {
       type: String,
