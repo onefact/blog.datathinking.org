@@ -82,7 +82,7 @@ Figure 2. *The worflow*
   src="https://randomcatlover-thesis-finetuned-classifier.hf.space"
 	frameborder="0"
 	width="850"
-	height="450" %}
+	height="450" /%}
 
 
 ## Wrapping Up
