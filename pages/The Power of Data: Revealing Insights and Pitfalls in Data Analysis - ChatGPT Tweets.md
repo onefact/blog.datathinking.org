@@ -70,6 +70,47 @@ bigram_text: The text with bigrams (pairs of consecutive words) identified.
 Link: https://www.figma.com/file/ceF6KqP9X6c74pxdTf4ZsY/Data-Journey?type=whiteboard&node-id=0%3A1&t=rGCkveaURFVDjG9m-1
 <img width="853" alt="image" src="https://github.com/nesmaAlmoazamy/blog.datathinking.org/assets/10960462/f3cdcc30-93e5-4bb8-9415-f554b187656d">
 
+### \documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+
+\title{math}
+
+\author{nesma.mahmoud }
+\date{June 2023}
+\usepackage{amsmath}
+
+\begin{document}
+
+\maketitle
+
+\section{Mathematics for Sentiment Analysis}
+
+\textbf{Sentiment Analysis:}
+
+Let $X = [x_1, x_2, \ldots, x_n]$ represent the tokenized and padded sequence of text data, where each token $x_i$ is a one-hot encoded vector.
+
+\textbf{Embedding Layer:}
+
+The embedding layer maps each one-hot encoded vector to a continuous, dense representation using an embedding matrix $E$. The embedded sequence is denoted as $H = [h_1, h_2, \ldots, h_n]$, where $h_i = E \cdot x_i$.
+
+\textbf{Hidden Layers:}
+
+The hidden layers apply weights and biases to the embedded sequence $H$. Let $W_i$ and $b_i$ represent the weight matrix and bias vector of the $i$-th hidden layer, respectively. The output of the $i$-th hidden layer is denoted as $Z_i = [z_{i1}, z_{i2}, \ldots, z_{im}]$, where $z_{ij} = \text{activation}(W_i \cdot h_j + b_i)$.
+
+\textbf{Output Layer:}
+
+The output layer applies a softmax activation function to the final hidden layer's output to obtain the predicted probabilities for each sentiment label. Let $O$ be the weight matrix and $b$ be the bias vector of the output layer. The predicted probabilities are represented as $Y_{\text{pred}} = [y_{\text{pred}_1}, y_{\text{pred}_2}]$, where $y_{\text{pred}_1}$ and $y_{\text{pred}_2}$ correspond to the predicted probabilities of the 'positive' and 'negative' sentiments, respectively. The computation is given by:
+
+\[
+Y_{\text{pred}} = \text{softmax}(O \cdot Z + b),
+\]
+
+where $Z$ is the output of the last hidden layer, and \text{softmax} denotes the softmax activation function.
+
+
+\end{document}
+
+
 ---
 
 Thanks for reading. Stay tuned for more data-driven stories!
