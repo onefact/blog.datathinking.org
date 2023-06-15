@@ -1,17 +1,17 @@
-title: The Power of Data: Revealing Insights and Pitfalls in Data Analysis - ChatGPT Tweets
-author 1: Nesma Mahmoud, Msc of Computer Science 
-editor: GPT-4
+# The Power of Data: Revealing Insights and Pitfalls in Data Analysis - ChatGPT Tweets
+### author: Nesma Mahmoud, Msc of Computer Science 
+### editor: GPT-4
 
-## 📀🤔 Research Question: How does sentiment analysis using different methods impact the classification of sentiment and the identification of sentiment trends?
+### 📀🤔 Research Question: How does sentiment analysis using different methods impact the classification of sentiment and the identification of sentiment trends?
 
-## 🧐💰 Rationale: 
+### 🧐💰 Rationale: 
 Sentiment analysis is a widely used technique in various domains, including marketing, social media analysis, and customer feedback analysis. Understanding the sentiment behind textual data can provide valuable insights and inform decision-making processes. However, the accuracy and reliability of sentiment analysis methods are crucial for drawing meaningful conclusions. The research question aims to investigate the impact of using different methods, specifically comparing a flawed method with a pretrained transformer-based method, on sentiment classification and trend analysis.
 
 The rationale behind this question is to highlight the potential pitfalls of relying on inaccurate or flawed sentiment analysis methods. By demonstrating how the misclassification of sentiment can occur and how it can be improved using more advanced techniques like pretrained transformers, the research aims to emphasize the importance of robust and reliable analysis methods.
 
 The decisions regarding which sentiment analysis method to use and how to interpret the sentiment trends will need to be made by the individuals or organizations relying on the analysis results. Researchers, data analysts, marketing professionals, and decision-makers in various industries may be involved in making these decisions.
 
-## 🧐💰 Stakes: The stakeholders who have skin in the game and bear material consequences include:
+### 🧐💰 Stakes: The stakeholders who have skin in the game and bear material consequences include:
 
 Researchers and Data Analysts: Their credibility and the validity of their research can be affected by the accuracy of sentiment analysis methods. They may face reputational risks if flawed methods are used, leading to incorrect conclusions or misleading trends.
 
@@ -22,16 +22,16 @@ Decision-Makers: Managers and executives who rely on data analysis to make infor
 Systems and Platforms: Data analysis techniques are often integrated into various systems and platforms, such as social media monitoring tools or customer feedback analysis platforms. If these systems utilize flawed methods, their users may receive inaccurate data analysis scores and trends, impacting the overall effectiveness and value of the platforms.
 
 
-## Data Governance: 
+### Data Governance: 
 Data Usage Policies: Avalilabe for Public use
 Ethical Considerations: There is no information provided regarding the ethical considerations taken into account during data collection, such as user consent, privacy protection, or compliance with Twitter's terms of service.
 Data Sharing and Sharing Restrictions: The dataset's sharing and redistribution policies are not specified. It is unknown whether there are any restrictions or licenses imposed on the usage or redistribution of the dataset.
 
-## Data Provenance
+### Data Provenance
 COLLECTION METHODOLOGY
 The tweepy Twitter API is used to extract the Tweets and Authors' data. There are some simple filters applied trying to avoid sensitive tweets and spam as much as possible.
 
-## The Data and What It Represents
+### The Data and What It Represents
 Context of the Data: 
 The datset is from kaggle: DOI: 10.34740/kaggle/dsv/5685262
 The dataset  consists of tweets from the Daily tweets about ChatGPT from Twitter. 
@@ -71,11 +71,3 @@ bigram_text: The text with bigrams (pairs of consecutive words) identified.
 ---
 
 Thanks for reading. Stay tuned for more data-driven stories!
-
-
-
-> GPT-4 prompt to generate this page (execpt for this sentence and the below prompt):
-
-```
-```
-
