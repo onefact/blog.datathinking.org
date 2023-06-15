@@ -4,15 +4,11 @@ author 1: Nesma Mahmoud, Msc of Computer Science
 editor: GPT-4
 ---
 
-# {% $markdoc.frontmatter.title %}
-
-Authors: {% $markdoc.frontmatter.authors %}
-Editor: {% $markdoc.frontmatter.editor %}
-
 
 ## 📀🤔 Research Question: How does sentiment analysis using different methods impact the classification of sentiment and the identification of sentiment trends?
 
-## 🧐💰 Rationale: Sentiment analysis is a widely used technique in various domains, including marketing, social media analysis, and customer feedback analysis. Understanding the sentiment behind textual data can provide valuable insights and inform decision-making processes. However, the accuracy and reliability of sentiment analysis methods are crucial for drawing meaningful conclusions. The research question aims to investigate the impact of using different methods, specifically comparing a flawed method with a pretrained transformer-based method, on sentiment classification and trend analysis.
+## 🧐💰 Rationale: 
+Sentiment analysis is a widely used technique in various domains, including marketing, social media analysis, and customer feedback analysis. Understanding the sentiment behind textual data can provide valuable insights and inform decision-making processes. However, the accuracy and reliability of sentiment analysis methods are crucial for drawing meaningful conclusions. The research question aims to investigate the impact of using different methods, specifically comparing a flawed method with a pretrained transformer-based method, on sentiment classification and trend analysis.
 
 The rationale behind this question is to highlight the potential pitfalls of relying on inaccurate or flawed sentiment analysis methods. By demonstrating how the misclassification of sentiment can occur and how it can be improved using more advanced techniques like pretrained transformers, the research aims to emphasize the importance of robust and reliable analysis methods.
 
