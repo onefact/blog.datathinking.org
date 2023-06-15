@@ -3,12 +3,6 @@ title: The Power of Data: Revealing Insights and Pitfalls in Data Analysis - Cha
 author 1: Nesma Mahmoud, Msc of Computer Science 
 editor: GPT-4
 ---
-
-# {% $markdoc.frontmatter.title %}
-
-Authors: {% $markdoc.frontmatter.authors %}
-Editor: {% $markdoc.frontmatter.editor %}
-
 ## 📀🤔 Research Question: How does sentiment analysis using different methods impact the classification of sentiment and the identification of sentiment trends?
 
 ## 🧐💰 Rationale: 
