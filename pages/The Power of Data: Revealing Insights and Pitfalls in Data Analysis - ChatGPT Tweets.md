@@ -66,7 +66,9 @@ transformers_sentiment: The sentiment assigned to the tweet using pretrained tra
 transformers_sentiment_score: The sentiment score assigned by pretrained transformers.
 bigram_text: The text with bigrams (pairs of consecutive words) identified.
 
-
+### Figma Board
+Link: https://www.figma.com/file/ceF6KqP9X6c74pxdTf4ZsY/Data-Journey?type=whiteboard&node-id=0%3A1&t=rGCkveaURFVDjG9m-1
+<img width="853" alt="image" src="https://github.com/nesmaAlmoazamy/blog.datathinking.org/assets/10960462/f3cdcc30-93e5-4bb8-9415-f554b187656d">
 
 ---
 
