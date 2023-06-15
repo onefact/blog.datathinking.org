@@ -36,7 +36,7 @@ Context of the Data:
 The datset is from kaggle: DOI: 10.34740/kaggle/dsv/5685262
 The dataset  consists of tweets from the Daily tweets about ChatGPT from Twitter. 
 
-The dataset includes the following columns:
+The dataset includes the following columns: [METADATA]
 tweet_id: Unique identifier for each tweet.
 tweet_created: The date and time when the tweet was created.
 tweet_extracted: The date and time when the tweet was extracted or collected.
@@ -70,9 +70,10 @@ bigram_text: The text with bigrams (pairs of consecutive words) identified.
 Link: https://www.figma.com/file/ceF6KqP9X6c74pxdTf4ZsY/Data-Journey?type=whiteboard&node-id=0%3A1&t=rGCkveaURFVDjG9m-1
 <img width="853" alt="image" src="https://github.com/nesmaAlmoazamy/blog.datathinking.org/assets/10960462/f3cdcc30-93e5-4bb8-9415-f554b187656d">
 
-### Mathermatics for Sentiment analysis
+### Mathematics for Sentiment analysis
 [math.pdf](https://github.com/nesmaAlmoazamy/blog.datathinking.org/files/11755509/math.pdf)
 
+### Analysis Results
 
 
 ---
