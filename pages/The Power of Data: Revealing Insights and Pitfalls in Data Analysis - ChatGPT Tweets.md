@@ -1,6 +1,6 @@
 # The Power of Data: Revealing Insights and Pitfalls in Data Analysis - ChatGPT Tweets
-### author: Nesma Mahmoud, Msc of Computer Science 
-### editor: GPT-4
+### Author: Nesma Mahmoud, Msc of Computer Science 
+### Editor: GPT-4
 
 ### 📀🤔 Research Question: How does sentiment analysis using different methods impact the classification of sentiment and the identification of sentiment trends?
 
@@ -75,6 +75,8 @@ Link: https://www.figma.com/file/ceF6KqP9X6c74pxdTf4ZsY/Data-Journey?type=whiteb
 
 ### Analysis Results
 
+### Notebook for replication:
+https://github.com/nesmaAlmoazamy/blog.datathinking.org/blob/patch-1/pages/Code:%20The%20Power%20of%20Data:%20Revealing%20Insights%20and%20Pitfalls%20in%20Data%20Analysis%20-%20ChatGPT%20Tweets.ipynb
 
 ---
 
