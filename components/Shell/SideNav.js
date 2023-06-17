@@ -8,6 +8,7 @@ const items = [
     links: [
       { href: '/understanding-3-1-1-service-requests', children: 'Understanding New York City 3-1-1 calls' },
       { href: '/second-example', children: 'Second example blog post in side navigation' },
+      { href: '/using-big-language-models-for-help-with-course-choice', children: 'Using LLMs to help with course choice' },
     ]
   },
   // {
