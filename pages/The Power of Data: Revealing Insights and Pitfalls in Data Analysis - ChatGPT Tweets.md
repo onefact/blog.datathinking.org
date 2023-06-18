@@ -100,11 +100,12 @@ It shows that the Positive sentiment count is exceeding the negative counts and 
 It is crucial to recognize the limitations and pitfalls associated with using flawed sentiment analysis methods, as demonstrated by the disparities between the results obtained from TextBlob and transformers. The incorrect analysis serves as a reminder of the importance of employing reliable and accurate methods, such as pretrained transformers, to obtain meaningful insights from sentiment analysis in text data.
 
 ### Visualization:
-Word Cloud: Unigram Word Cloud:
+#### Word Cloud: Unigram Word Cloud:
 The unigram word cloud provides insights into the most frequently occurring single words in the dataset. Each word is represented in the word cloud, with larger and bolder fonts indicating higher frequencies. By examining the unigram word cloud, we can identify the prominent words used in the ChatGPT tweets and gain an understanding of the key topics, themes, or sentiments expressed by users.
 
 ![image](https://github.com/nesmaAlmoazamy/blog.datathinking.org/assets/10960462/3ec4596a-85a6-4137-a508-5bc1be853a62)
-Bigram word cloud: 
+
+#### Word cloud: Bigram word cloud: 
 The bigram word cloud offers insights into pairs of consecutive words that commonly occur together in the dataset. It identifies collocations or phrases that provide more contextual meaning than individual words. By analyzing bigrams, we can identify significant word combinations, expressions, or frequently co-occurring phrases within the tweets.
 
 ![image](https://github.com/nesmaAlmoazamy/blog.datathinking.org/assets/10960462/36282e14-84e2-4972-bbb9-17696bdc487e)
