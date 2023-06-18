@@ -10,6 +10,7 @@ const items = [
       { href: 'https://arxiv.org/abs/1904.05342', children: 'ClinicalBERT' },
       { href: 'https://www.datathinking.org/university-of-tartu', children: 'Data Thinking' },
       { href: 'https://childfx.com', children: 'ChildFx' },
+      { href: 'https://github.com/nesmaAlmoazamy/blog.datathinking.org/blob/patch-1/pages/The%20Power%20of%20Data%3A%20Revealing%20Insights%20and%20Pitfalls%20in%20Data%20Analysis%20-%20ChatGPT%20Tweets.md','Nesma Project'}
     ]
   },
   {
