@@ -75,6 +75,34 @@ Link: https://www.figma.com/file/ceF6KqP9X6c74pxdTf4ZsY/Data-Journey?type=whiteb
 
 ### Analysis Results
 
+During the analysis of the ChatGPT tweets dataset, an important pitfall of data analysis was identified when using the TextBlob library for sentiment analysis. It was observed that the sentiment analysis results from TextBlob were biased due to the misclassification of neutral sentiments as positive. This raised concerns about the accuracy and reliability of the sentiment analysis performed using this method.
+
+To address this pitfall and improve the sentiment analysis, several steps were taken:
+
+1. Removal of Neutral Sentiments: To mitigate the issue of misclassifying neutral sentiments as positive, a decision was made to remove tweets with neutral sentiments. By considering the sentiment polarity of each tweet, neutral sentiments were identified and excluded from the analysis. This step aimed to ensure a more accurate representation of the positive and negative sentiments within the dataset.
+
+2. Elimination of Duplicate Tweets (Retweets): Another step taken to enhance the data quality was the removal of duplicate tweets, particularly retweets. Duplicate tweets can skew the analysis results and introduce bias, as they provide redundant information. By eliminating retweets, the dataset was streamlined to contain unique tweets, reducing the potential for duplicated sentiments and ensuring data integrity.
+
+3. Leveraging Pretrained Transformers for Sentiment Analysis: To overcome the limitations of the initial flawed sentiment analysis method, pretrained transformers were employed. Transformers, such as BERT or GPT-based models, have demonstrated superior performance in natural language processing tasks, including sentiment analysis. By utilizing the power of these pretrained models, sentiment analysis was performed again on the dataset, yielding more reliable and accurate sentiment classifications. The transformers' ability to capture contextual information and nuances in language contributed to improved sentiment analysis outcomes.
+By examining the trend of the sentiment analysis using transformers [ Correct Method]
+![image](https://github.com/nesmaAlmoazamy/blog.datathinking.org/assets/10960462/4f946087-dcc4-49d1-9046-155f88aac747)
+It shows that the negative sentiment count is exceeding the positive counts and that the trend was high at the begining of week 14 and it tends to decrease over time.
+By examining the trend of the sentiment analysis using TextBlob [ wrong method]
+![image](https://github.com/nesmaAlmoazamy/blog.datathinking.org/assets/10960462/cd2caf50-3310-4149-b13d-ba7319921b50)
+It shows that the Positive sentiment count is exceeding the negative counts and that the trend for negative sentiment is increasing while the trend for positive sentiment is decreasing over time.
+
+It is crucial to recognize the limitations and pitfalls associated with using flawed sentiment analysis methods, as demonstrated by the disparities between the results obtained from TextBlob and transformers. The incorrect analysis serves as a reminder of the importance of employing reliable and accurate methods, such as pretrained transformers, to obtain meaningful insights from sentiment analysis in text data.
+
+### Visualization:
+Word Cloud: Unigram Word Cloud:
+The unigram word cloud provides insights into the most frequently occurring single words in the dataset. Each word is represented in the word cloud, with larger and bolder fonts indicating higher frequencies. By examining the unigram word cloud, we can identify the prominent words used in the ChatGPT tweets and gain an understanding of the key topics, themes, or sentiments expressed by users.
+
+![image](https://github.com/nesmaAlmoazamy/blog.datathinking.org/assets/10960462/3ec4596a-85a6-4137-a508-5bc1be853a62)
+Bigram word cloud: 
+The bigram word cloud offers insights into pairs of consecutive words that commonly occur together in the dataset. It identifies collocations or phrases that provide more contextual meaning than individual words. By analyzing bigrams, we can identify significant word combinations, expressions, or frequently co-occurring phrases within the tweets.
+
+![image](https://github.com/nesmaAlmoazamy/blog.datathinking.org/assets/10960462/36282e14-84e2-4972-bbb9-17696bdc487e)
+
 ### Notebook for replication:
 https://github.com/nesmaAlmoazamy/blog.datathinking.org/blob/patch-1/pages/Code:%20The%20Power%20of%20Data:%20Revealing%20Insights%20and%20Pitfalls%20in%20Data%20Analysis%20-%20ChatGPT%20Tweets.ipynb
 
