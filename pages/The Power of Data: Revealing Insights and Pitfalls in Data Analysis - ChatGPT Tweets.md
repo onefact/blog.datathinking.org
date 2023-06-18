@@ -84,11 +84,17 @@ To address this pitfall and improve the sentiment analysis, several steps were t
 2. Elimination of Duplicate Tweets (Retweets): Another step taken to enhance the data quality was the removal of duplicate tweets, particularly retweets. Duplicate tweets can skew the analysis results and introduce bias, as they provide redundant information. By eliminating retweets, the dataset was streamlined to contain unique tweets, reducing the potential for duplicated sentiments and ensuring data integrity.
 
 3. Leveraging Pretrained Transformers for Sentiment Analysis: To overcome the limitations of the initial flawed sentiment analysis method, pretrained transformers were employed. Transformers, such as BERT or GPT-based models, have demonstrated superior performance in natural language processing tasks, including sentiment analysis. By utilizing the power of these pretrained models, sentiment analysis was performed again on the dataset, yielding more reliable and accurate sentiment classifications. The transformers' ability to capture contextual information and nuances in language contributed to improved sentiment analysis outcomes.
-By examining the trend of the sentiment analysis using transformers [ Correct Method]
+
+#### By examining the trend of the sentiment analysis using transformers [ Correct Method]
+
 ![image](https://github.com/nesmaAlmoazamy/blog.datathinking.org/assets/10960462/4f946087-dcc4-49d1-9046-155f88aac747)
+
 It shows that the negative sentiment count is exceeding the positive counts and that the trend was high at the begining of week 14 and it tends to decrease over time.
-By examining the trend of the sentiment analysis using TextBlob [ wrong method]
+
+#### By examining the trend of the sentiment analysis using TextBlob [ wrong method]
+
 ![image](https://github.com/nesmaAlmoazamy/blog.datathinking.org/assets/10960462/cd2caf50-3310-4149-b13d-ba7319921b50)
+
 It shows that the Positive sentiment count is exceeding the negative counts and that the trend for negative sentiment is increasing while the trend for positive sentiment is decreasing over time.
 
 It is crucial to recognize the limitations and pitfalls associated with using flawed sentiment analysis methods, as demonstrated by the disparities between the results obtained from TextBlob and transformers. The incorrect analysis serves as a reminder of the importance of employing reliable and accurate methods, such as pretrained transformers, to obtain meaningful insights from sentiment analysis in text data.
