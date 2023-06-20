@@ -9,7 +9,7 @@ editors: GPT-3.5, Github Copilot
 
 Author: {% $markdoc.frontmatter.author %}
 Project authors: {% $markdoc.frontmatter.project_authors %}
-Editor: {% $markdoc.frontmatter.editors %}
+Editors: {% $markdoc.frontmatter.editors %}
 
 ## Introduction
 
@@ -51,6 +51,7 @@ def get_all_courses():
 def get_course_latest_details(course):
     return requests.post(f'{base_address}/courses/course-version/{course["latest_version_uuid"]}').json()
 ```
+
 *Getting course data from ÕIS API*
 
 However, it turned out that this was the easy part. The data was very messy - each course is represented by a JSON file with tens of fields that contain a lot more nested objects. We wrote a lot of code to extract the data we deemed useful, however it seemed the deeper you went, the more inconsistencies you found. 
@@ -110,11 +111,13 @@ The problem is the context size of the model (the number of word tokens you can 
 What we also decided to do was add some documents about the lecturers of the university. It was a simple pattern - `Lecturer {lecturer_name} teaches the courses {courses}`. In theory this should help the end user if, for example, they took a course from some lecturer and would (or wouldn't) like to take other courses from them. A small side effect of this was that there are a lot of lecturers, sometimes multiple per course, and these documents skewed the overall document size distribution. It could become a problem at some point, but it seemed fine at the time.
 
 ![Document size distribution](images/using_big_language_models_course_choice/document_sizes.svg)
+
 *Document size distribution histogram shows how adding the lecturer makes the distribution imbalanced*
 
 However, all of these documents still would not fit into the context of the model, we needed a way to pick the most important ones, based on the given question. We opted to use cosine similarity for this search. What's cosine similarity you might ask. The metric is used to compare how aligned two multidimensional vectors are. If we have vectors $a$ and $b$, the cosine similarity is defined as:
 
-$$ similarity = ∑(a_i * b_i) / (√(∑(a_i^2)) * √(∑(b_i^2))) $$
+$$similarity = ∑(a_i * b_i) / (√(∑(a_i^2)) * √(∑(b_i^2)))$$
+
 *Computing cosine similarity*
 
 Here the resulting value is 1 when the vectors are identical and -1 when they are completely opposite. The hope is that the vector representing the question would be most similar to the vector representing the document that contains the answer. Unfortunately, that's not always the case - models used for embedding generation usually have a bias towards certain features of the text that is being encoded. In our case, the issue came with the models being biased towards the length of the text, and the embeddings for the question would be most similar with the ones for the shortest known document. Fortunately, we found an embeddings model which was length-agnostic - [`INSTRUCTOR Transformer`](https://arxiv.org/pdf/2212.09741.pdf). 
@@ -123,7 +126,8 @@ Here the resulting value is 1 when the vectors are identical and -1 when they ar
 
 Before we proceed, let's take a little bit of time to think about what we achieved here. We started with (relatively) dirty data coming in from the ÕIS API, cleaned it up to get rid of all the meaningless, indistinguishable or duplicate data. Afterwards, we took this data and transformed it into two different formats - questions and documents. 
 
-![Document size distribution](images/using_big_language_models_course_choice/data_flow.svg)
+<img src='images/using_big_language_models_course_choice/data_flow.svg' alt='Data flow schema', width='50%', height='50%'>
+
 *Flow of the data throughout the process*
 
 The two different modalities show two different approaches of working with this data - the question-based approach attempts to encode the information in the model itself, meaning it's operation would be quicker and relatively straightforward. However, as we have seen before, we lose precision this way.
@@ -181,6 +185,7 @@ qa.combine_documents_chain.document_prompt = conditoning_prompt
 query = "What courses should I take to learn python?"
 response = qa(query)
 ```
+
 *Essential parts of the pipeline (with some variable initialization skipped for clarity)*
 
 And that's about it. In the end the couple lines of code for the pipeline didn't look like much, but it took a lot of time and effort to get there. But does it work?  
@@ -207,7 +212,8 @@ A: The course named 'Nutraceuticals, Home Artificial Nutrition and Financial Asp
 
 The question answering pipeline looked reliable most of the time. That's the problem - **most**. There were so many different questions possible that it was impossible to be sure. We started to wonder if there's a way to evaluate the accuracy of the model automatically. The general metrics we used before were no good for this task. For example, F1 score is usually very good for evaluation of classification problems - it calculates a harmonic mean of precision and recall ([Google developers](https://developers.google.com/machine-learning/crash-course/classification/precision-and-recall) website has a great reminder about them). However, if we used it here, it would mean that the generated answer would have to match the real one word to word, so for example answers `Course is worth 6 ECTS` and `You can earn six credits for the effort` would be considered completely different, which is not what we want.
 
-$$ F1=2{\frac {\mathrm {precision} \cdot \mathrm {recall} }{\mathrm {precision} +\mathrm {recall} }}={\frac {2\mathrm {tp} }{2\mathrm {tp} +\mathrm {fp} +\mathrm {fn} }} $$
+$$F1=2{\frac {\mathrm {precision} \cdot \mathrm {recall} }{\mathrm {precision} +\mathrm {recall} }}={\frac {2\mathrm {tp} }{2\mathrm {tp} +\mathrm {fp} +\mathrm {fn} }}$$
+
 *Computing the F1 score(Here tp = true positives, fp = false positives and fn = false negatives)*
 
 
@@ -218,6 +224,7 @@ Well, turns out it's not that simple. Cosine similarity was great while picking 
 We can visualise this problem using principal component analysis. It's a technique that is used to reduce the dimensionality of the embedding vectors, while still keeping the most important information. We can reduce the vectors even to two dimensions, which allows us to plot them on a graph as points. As you can see below, there's a lot of overlap between the embedding vectors of the real answers, and ones generated by our fine-tuned model. There are no clear clusters, meaning that all the answers are really similar. We know that there are wrong answers in there, as we have tried out the model by ourselves, but the cosine similarity metric can't tell a huge difference between them.
 
 ![Answer embeddings PCA](images/using_big_language_models_course_choice/answer_pca.svg)
+
 *Answer distribution visualised in 2D space using PCA*
 
 It turns out we are not the only ones dealing with such issues and evaluating text generation models is still an open problem in the field. However, one of the most popular approaches is using [BERTScore](https://arxiv.org/pdf/1904.09675.pdf). It's a combination of the previously mentioned approaches - cosine similarity and F1 score - however here the idea is to compare the matches not of the generated sentence structure, but of the vectors representing the word meaning instead. Each word vector from the prediction gets compared with a vector from the ground truth, and afterwards pairs are created based on the highest cosine similarity match. afterwards, the F1 score is calculated based on these pairs.
@@ -228,6 +235,7 @@ It's a great approach, at least on paper. In reality, however, it wasn't much be
 |:-----------:|:-------------:|:-----------:|
 | Fine-tuning |  0.978 | 0.977      |
 | Retrieval augmentation |    0.94   |   0.921       |
+
 *Quantitative evaluation of the fine-tuning and retrieval augmentation approaches*
 
 At this point we started giving up on automated evaluation. We ran out of ideas, and consulting online sources or language models essentially had us running in circles - the approaches we found or were suggested relied on the same underlying principles and therefore would suffer from the same problems as well.
