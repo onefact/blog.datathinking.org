@@ -116,7 +116,7 @@ What we also decided to do was add some documents about the lecturers of the uni
 
 However, all of these documents still would not fit into the context of the model, we needed a way to pick the most important ones, based on the given question. We opted to use cosine similarity for this search. What's cosine similarity you might ask. The metric is used to compare how aligned two multidimensional vectors are. If we have vectors $a$ and $b$, the cosine similarity is defined as:
 
-$similarity = ∑(a_i * b_i) / (√(∑(a_i^2)) * √(∑(b_i^2)))$
+$$similarity = ∑(a_i * b_i) / (√(∑(a_i^2)) * √(∑(b_i^2)))$$
 
 *Computing cosine similarity*
 
@@ -212,7 +212,7 @@ A: The course named 'Nutraceuticals, Home Artificial Nutrition and Financial Asp
 
 The question answering pipeline looked reliable most of the time. That's the problem - **most**. There were so many different questions possible that it was impossible to be sure. We started to wonder if there's a way to evaluate the accuracy of the model automatically. The general metrics we used before were no good for this task. For example, F1 score is usually very good for evaluation of classification problems - it calculates a harmonic mean of precision and recall ([Google developers](https://developers.google.com/machine-learning/crash-course/classification/precision-and-recall) website has a great reminder about them). However, if we used it here, it would mean that the generated answer would have to match the real one word to word, so for example answers `Course is worth 6 ECTS` and `You can earn six credits for the effort` would be considered completely different, which is not what we want.
 
-$F1=2{\frac {\mathrm {precision} \cdot \mathrm {recall} }{\mathrm {precision} +\mathrm {recall} }}={\frac {2\mathrm {tp} }{2\mathrm {tp} +\mathrm {fp} +\mathrm {fn} }}$
+$$F1=2{\frac {\mathrm {precision} \cdot \mathrm {recall} }{\mathrm {precision} +\mathrm {recall} }}={\frac {2\mathrm {tp} }{2\mathrm {tp} +\mathrm {fp} +\mathrm {fn} }}$$
 
 *Computing the F1 score(Here tp = true positives, fp = false positives and fn = false negatives)*
 
