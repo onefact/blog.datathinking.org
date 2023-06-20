@@ -40,13 +40,17 @@ The split is closer to 70-30, male to female respectively, in the winter.
 
 ![Alt Text](files/visualization(18).png)
 
+![Alt Text](files/visualization(23).png)
+
+And the population pyramid. Note: older age group too!
+
 ## Why is that? Are the bikes to blame?
 
 There are no electric bikes offered during the winter months. Could the percentages between genders be greatly changed because of a lack of electric bikes offered? Looking at the preference in the summer months, when both types of bikes are fully available, we see that there is a difference between bicycle preferences. This would lead to inconclusive evidence on what drive this difference in demographics. 
 
-![Alt Text](files/visualization(23).png)
+![Alt Text](files/visual22.png)
 
-And the population pyramid. Note: older age group too!
+
 
 ![Alt Text](files/visual20).png)
 
