@@ -1,17 +1,13 @@
---- 
-title: Gender-Based Analysis of Tartu Bike Sharing Service
-author: Indrek Romet
-coauthor: ChatGPT
-
----
 
 # Gender-Based Analysis of Tartu Bike Sharing Service
 
-author: Indrek Romet
-coauthor: ChatGPT
+authors: Indrek Romet & ChatGPT
 
-A bike-sharing service was launched in Tarth in 2019. The usage patterns of this system in Tartu, especially in comparison with other cities, are not fully known. Data from Australia, UK and Canada show women use bikes at rates of only 21%,  29% and 30%, respectively, while in Germany, Denmark and the Netherlands 40% or more of the rides are by females (Pucher & Buehler, 2008). This blog post analyzes differences in bike usage between males and females in Tartu based on 2022 bike-sharing usage data. 
+A bike-sharing service was launched in Tarth in 2019. The usage patterns of this system in Tartu, especially in comparison with other cities, are not fully known. Data from Australia, UK and Canada show women use bikes at rates of only 21%,  29% and 30%, respectively, while in Germany, Denmark and the Netherlands, 40% or more of the rides are by females (Pucher & Buehler, 2008). This blog post analyzes differences in bike usage between males and females in Tartu based on 2022 bike-sharing usage data. 
 
+What are the differences in bike usage patterns between male and female smart bike users in Tartu?" With the increasing emphasis on sustainable modes of transport, understanding user demographics and behaviours is crucial in shaping policies and systems that cater to the needs of diverse user groups. My interest in this topic arises from the observation that gender dynamics in urban mobility are often overlooked, potentially leading to skewed services that may not fully cater to all demographics.
+
+The findings of this research could provide valuable insights to city planners and transportation providers. If significant differences are found, it could indicate a need to revise the smart bike services to make them more inclusive and accessible to all users. This could result in improved user experience, increased usage of smart bikes, and progress toward the environmental goals of reducing carbon emissions and promoting healthier lifestyles.
 
 ## The Data 
 
