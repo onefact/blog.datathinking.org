@@ -32,7 +32,7 @@ An approximately 60-40 split between males and females. This is close to other b
 
 And here is a population pyramid of the users over the warmer half of the year (as well as the part of the year with full bicycle availability)
 
-![Alt Text](files/visualization(2).png)
+![Alt Text](files/visualization(2).svg)
 
 ## But what about during the winter?
 
