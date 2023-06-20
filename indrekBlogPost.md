@@ -51,9 +51,6 @@ There are no electric bikes offered during the winter months. Could the percenta
 ![Alt Text](files/visual22.png)
 
 
-
-![Alt Text](files/visual20.png)
-
 ## While we're here, can we predict the length of a trip based on age and gender?
 
 Absolutely not, totally pointless, but worth the try.
