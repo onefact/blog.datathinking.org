@@ -1,7 +1,7 @@
 
 # Gender-Based Analysis of Tartu Bike Sharing Service
 
-authors: Indrek Romet & ChatGPT
+Authors: Indrek Romet & ChatGPT
 
 A bike-sharing service was launched in Tarth in 2019. The usage patterns of this system in Tartu, especially in comparison with other cities, are not fully known. Data from Australia, UK and Canada show women use bikes at rates of only 21%,  29% and 30%, respectively, while in Germany, Denmark and the Netherlands, 40% or more of the rides are by females (Pucher & Buehler, 2008). This blog post analyzes differences in bike usage between males and females in Tartu based on 2022 bike-sharing usage data. 
 
