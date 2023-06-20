@@ -38,11 +38,12 @@ And here is a population pyramid of the users over the warmer half of the year (
 
 The split is closer to 70-30, male to female respectively, in the winter.
 
-![Alt Text](files/visualization(18).png)
-
 ![Alt Text](files/visualization(23).png)
 
-And the population pyramid. Note: older age group too!
+And the population pyramid. Note: older age group too! (compared to summer months)
+
+![Alt Text](files/visualization(18).png)
+
 
 ## Why is that? Are the bikes to blame?
 
