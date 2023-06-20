@@ -8,6 +8,7 @@ const items = [
     links: [
       { href: '/understanding-3-1-1-service-requests', children: 'Understanding New York City 3-1-1 calls' },
       { href: '/second-example', children: 'Second example blog post in side navigation' },
+      { href: '/IndrekBlogPost', children: 'Gender-Based Analysis of Tartu Smart Bike users' },
     ]
   },
   // {
