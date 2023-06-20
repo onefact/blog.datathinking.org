@@ -25,23 +25,49 @@ Every ride taken in the bike sharing system is recorded (https://geohub.tartulv.
 
 This data can allow us learn more about trends and patterns in the gender of Tartu SmartBike users
 
+After downloading the CSV files with all the monthly bike rides, I combined the files into one, as can be seen in the example code snippet below:
+
+![Alt Text](files/CodeSnippet1.png)
+
 ## Raw Research: How many users of each gender
 
 An approximately 60-40 split between males and females. This is close to other bike friendly countries in Europe, an encouraging sign.
 
-![Alt Text](visualization(19).png)
+![Alt Text](files/visualization(19).png)
+
+And here is a population pyramid of the users over the warmer half of the year (as well as the part of the year with full bicycle availability)
+
+![Alt Text](files/CodeSnippet1.png)
 
 ## But what about during the winter?
 
 The split is closer to 70-30, male to female respectively, in the winter.
 
-![Alt Text](visualization(18).png)
+![Alt Text](files/visualization(18).png)
 
 ## WHy is that, are the bikes to blame?
 
 There are no electric bikes offered during the winter months. Could the precentages between genders be greatly changed because of a lack of electric bikes offered? Looking at the preference in the summer months, when both types of bikes are fully available, we see that there is difference between bicycle preference. This would lead to inconclusive evidence on what drive this difference in demographics. 
 
-![Alt Text](visual20).png)
+![Alt Text](files/visualization(23).png)
+
+And the population pyramid. Note: older age group too!
+
+![Alt Text](files/visual20).png)
+
+## While we're here, can we predict the length of a trip based on age and gender?
+
+Absolutely not, totally pointless, but worth the try.
+
+![Alt Text](files/codesnippet3.png)
+
+Here is the formula for linear regression:
+
+![Alt Text](files/svg1.svg)
+
+And in our case specifically:
+
+![Alt Text](files/svg2.svg)
 
 ## Conclusion and sources
 
