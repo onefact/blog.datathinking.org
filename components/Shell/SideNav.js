@@ -8,6 +8,7 @@ const items = [
     links: [
       { href: '/understanding-3-1-1-service-requests', children: 'Understanding New York City 3-1-1 calls' },
       { href: '/second-example', children: 'Second example blog post in side navigation' },
+      { href: '/craw--compound-reason-n-refer-agent-on-wikipedia', children: 'Using modular LLMs to recursively solve complex reasoning tasks over a knowledge base.' },
     ]
   },
   // {
