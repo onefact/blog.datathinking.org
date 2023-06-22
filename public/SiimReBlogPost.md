@@ -2,7 +2,7 @@
 Authors: Siim Reinaas & [ChatGPT May 24 Version](https://help.openai.com/en/articles/6825453-chatgpt-release-notes)
 
 ## Introduction
-Welcome to my blog post, where we delve into the world of OCR data and explore the dynamics of Estonian sailboat numbers across different year categories. [OCR](https://orc.org/), which stands for **O**ffshore **R**acing **C**ongress, is an organization focused on organizing sailing regattas and developing racing rules. On their worldwide certificate database website (https://data.orc.org), valuable data about sailboats is available, allowing us to gain deeper insights into the development of sailing in Estonia.
+Welcome to my blog post, where we delve into the world of OCR data and explore the dynamics of Estonian sailboat numbers across different year categories. [OCR](https://orc.org/), which stands for **O**ffshore **R**acing **C**ongress, is an organization that organises sailing regattas and develops racing rules. On their worldwide certificate database website (https://data.orc.org), valuable data about sailboats is available, allowing us to gain deeper insights into the development of sailing in Estonia.
 
 Whether you're a sailing enthusiast or interested in statistics and racing events, this post is for you. In this blog post, we open the doors to the world of OCR data and examine how the number of Estonian sailboats has changed.
 
@@ -14,3 +14,13 @@ Let's dive into the world of data and discover how OCR data helps us understand 
 
 ## Data, Cleaning and Preprocessing
 ![BigDataBorat](images/big-data-borat.png)
+
+Accessing data from official sources can be surprisingly challenging, even when an organization has a website with the desired data. Often, these websites are filled with a wealth of information and options that can overwhelm novice users.
+
+Firstly, finding the data can be a hurdle. Navigating organization websites can be complex, especially when there is no clear data access path. Sometimes, the required data may be buried deep within the website's structure or need advanced search functionalities to locate.
+
+Additionally, data formatting can present an obstacle. Some official websites may provide data in formats that are not directly usable for analysis. For example, data may be stored in PDF files that make extracting text difficult or in unstructured formats that require additional processing.
+
+Another challenge is data quality. While the data may be official, it can still contain errors, missing values, or inconsistencies. Before analysis, data cleaning is necessary, involving the identification and correction of erroneous data and the completion of missing values. This process can be time-consuming and requires knowledge of data preprocessing methods.
+
+In summary, it must be acknowledged that even when data is available on official organization websites, obtaining it can be difficult and require additional effort. Finding the data, getting it in a suitable format, and cleaning it all need specific skills and tools. However, overcoming these challenges can unlock valuable insights and gain a deeper understanding of the dynamics within the field of study.
