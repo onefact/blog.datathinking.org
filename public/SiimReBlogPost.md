@@ -23,4 +23,13 @@ Additionally, data formatting can present an obstacle. Some official websites ma
 
 Another challenge is data quality. While the data may be official, it can still contain errors, missing values, or inconsistencies. Before analysis, data cleaning is necessary, involving the identification and correction of erroneous data and the completion of missing values. This process can be time-consuming and requires knowledge of data preprocessing methods.
 
-In summary, it must be acknowledged that even when data is available on official organization websites, obtaining it can be difficult and require additional effort. Finding the data, getting it in a suitable format, and cleaning it all need specific skills and tools. However, overcoming these challenges can unlock valuable insights and gain a deeper understanding of the dynamics within the field of study.
+In short, the following obstacles are encountered with the data:
+* Registration requirement (data not freely and publicly available)
+* Complexity of website navigation (should ideally be clear and straightforward)
+* Data formats such as HTML tables, which are suitable for web presentation, but additional formats like CSV or other widely used data formats would be beneficial
+* Variable data structure (each year category should have consistent data fields rather than randomly changing)
+* Fluctuating data quality.
+
+It must be acknowledged that even when data is available on official organization websites, obtaining it can be difficult and require additional effort. Finding the data, getting it in a suitable format, and cleaning it all need specific skills and tools. However, overcoming these challenges can unlock valuable insights and a deeper understanding of the dynamics within the field of study.
+
+
