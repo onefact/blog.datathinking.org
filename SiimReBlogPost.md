@@ -11,3 +11,5 @@ We analyze various year categories and delve into the depths of the data to disc
 Together, we explore the fascinating life cycle of Estonian sailboat numbers and uncover the factors that have influenced their evolution in different years. Have certain sailboat classes become more popular, or has the sailing culture undergone significant transformations? This post offers an exciting journey where we delve into OCR data analysis to understand better the dynamics of sailing in Estonia.
 
 Let's dive into the world of data and discover how OCR data helps us understand and analyze the changing sailboat numbers in Estonia over different years. I'm confident this blog post will provide intriguing insights and fresh perspectives on the history of Estonian sailing!
+
+## Data, Cleaning and Preprocessing
