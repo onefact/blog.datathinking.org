@@ -13,3 +13,4 @@ Together, we explore the fascinating life cycle of Estonian sailboat numbers and
 Let's dive into the world of data and discover how OCR data helps us understand and analyze the changing sailboat numbers in Estonia over different years. I'm confident this blog post will provide intriguing insights and fresh perspectives on the history of Estonian sailing!
 
 ## Data, Cleaning and Preprocessing
+![BigDataBorat](images/big-data-borat.png)
