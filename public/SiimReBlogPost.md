@@ -56,3 +56,39 @@ Getting the information from the official data to make the calculations was time
 * [2023_ORC_ESTONIA.csv](data/2023_ORC_ESTONIA.csv)
 
 This entire dataset is packed into a single .zip archive file here: [ORC-EST-2004-2023.zip](data/ORC-EST-2004-2023.zip)
+
+### Code
+I used all kinds of tools to collect and organize the data. For example, I had to take the year from one of the data cells in parentheses. It was added after the yacht class. I wanted the age and type of the yacht to be in separate columns. This way, the information is correct and can be used for actions in the future.
+
+Here is a simple code example:
+```
+# Open the file '2004.csv' and get the year from the column 'Class Age'
+# and put the year in the column 'Year'
+
+import csv
+
+filename = '2009.csv'
+new_filename = '2009_modified.csv'
+print(filename)
+
+data = []
+with open(filename, 'r', newline='') as file:
+    csv_reader = csv.reader(file)
+    for row in csv_reader:
+        data.append(row)
+
+# Year column (column9 =9-1= 8)
+year_column = 8
+
+for i in range(1, len(data)):
+    class_age = data[i][year_column]
+    year_start = class_age.find("(")
+    year_end = class_age.find(")")
+    year = class_age[year_start + 1:year_end]
+    data[i][year_column] = class_age[:year_start] + class_age[year_end + 1:]
+    data[i][year_column-1] = year
+
+with open(new_filename, 'w', newline='') as file:
+    csv_writer = csv.writer(file)
+    csv_writer.writerows(data)
+```
