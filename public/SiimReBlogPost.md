@@ -92,3 +92,41 @@ with open(new_filename, 'w', newline='') as file:
     csv_writer = csv.writer(file)
     csv_writer.writerows(data)
 ```
+
+Here is my simple code sample to visualize linear regression:
+```
+import pandas as pd
+import matplotlib.pyplot as plt
+from sklearn.linear_model import LinearRegression
+
+# Define the data
+years = [2004, 2005, 2006, 2007, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023]
+boat_counts = [25, 23, 84, 2, 101, 83, 83, 81, 60, 57, 56, 46, 38, 33, 208, 193, 166, 169, 125]
+
+# Convert the data to a pandas DataFrame
+df = pd.DataFrame({'Year': years, 'Boat Count': boat_counts})
+
+# Create and fit the linear regression model
+model = LinearRegression()
+model.fit(df[['Year']], df['Boat Count'])
+
+# Make predictions using the model
+predicted_counts = model.predict(df[['Year']])
+
+# Visualize the data and linear regression
+plt.scatter(df['Year'], df['Boat Count'], color='b', label='Number of yachts with ORC certificate')
+plt.plot(df['Year'], predicted_counts, color='r', label='Linear Regression')
+plt.xlabel('Years')
+plt.ylabel('Yachts')
+plt.title('Number of yachts in ORC Class from 2004 to 2023 in Estonia.')
+
+# Set the x-axis ticks as integers
+plt.xticks(range(min(years), max(years)+1, 2))
+
+# Add the boat counts as labels near the points
+for i in range(len(years)):
+    plt.annotate(boat_counts[i], (years[i], boat_counts[i]), textcoords="offset points", xytext=(0,10), ha='center')
+
+plt.legend()
+plt.show()
+```
