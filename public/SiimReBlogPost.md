@@ -35,4 +35,22 @@ It must be acknowledged that even when data is available on official organizatio
 ### Data
 Getting the information from the official data to make the calculations was time-consuming and sometimes frustrating. The raw data is now processed here to make it easier for future applicants. Below are the files in CVS format, organized and with a similar structure (I repeat - it took time to convert to this format, and they were not immediately available on the official website).
 
-
+* [2004_ORC_ESTONIA.csv](data/2004_ORC_ESTONIA.csv)
+* [2005_ORC_ESTONIA.csv](data/2005_ORC_ESTONIA.csv)
+* [2006_ORC_ESTONIA.csv](data/2006_ORC_ESTONIA.csv)
+* [2007_ORC_ESTONIA.csv](data/2007_ORC_ESTONIA.csv)
+* [2009_ORC_ESTONIA.csv](data/2009_ORC_ESTONIA.csv)
+* [2010_ORC_ESTONIA.csv](data/2010_ORC_ESTONIA.csv)
+* [2011_ORC_ESTONIA.csv](data/2011_ORC_ESTONIA.csv)
+* [2012_ORC_ESTONIA.csv](data/2012_ORC_ESTONIA.csv)
+* [2013_ORC_ESTONIA.csv](data/2013_ORC_ESTONIA.csv)
+* [2014_ORC_ESTONIA.csv](data/2014_ORC_ESTONIA.csv)
+* [2015_ORC_ESTONIA.csv](data/2015_ORC_ESTONIA.csv)
+* [2016_ORC_ESTONIA.csv](data/2016_ORC_ESTONIA.csv)
+* [2017_ORC_ESTONIA.csv](data/2017_ORC_ESTONIA.csv)
+* [2018_ORC_ESTONIA.csv](data/2018_ORC_ESTONIA.csv)
+* [2019_ORC_ESTONIA.csv](data/2019_ORC_ESTONIA.csv)
+* [2020_ORC_ESTONIA.csv](data/2020_ORC_ESTONIA.csv)
+* [2021_ORC_ESTONIA.csv](data/2021_ORC_ESTONIA.csv)
+* [2022_ORC_ESTONIA.csv](data/2022_ORC_ESTONIA.csv)
+* [2023_ORC_ESTONIA.csv](data/2023_ORC_ESTONIA.csv)
