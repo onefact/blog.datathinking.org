@@ -54,3 +54,5 @@ Getting the information from the official data to make the calculations was time
 * [2021_ORC_ESTONIA.csv](data/2021_ORC_ESTONIA.csv)
 * [2022_ORC_ESTONIA.csv](data/2022_ORC_ESTONIA.csv)
 * [2023_ORC_ESTONIA.csv](data/2023_ORC_ESTONIA.csv)
+
+This entire dataset is packed into a single .zip archive file here: [ORC-EST-2004-2023.zip](data/ORC-EST-2004-2023.zip)
