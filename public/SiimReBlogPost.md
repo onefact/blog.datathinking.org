@@ -130,3 +130,14 @@ for i in range(len(years)):
 plt.legend()
 plt.show()
 ```
+
+## Results
+The linear regression analysis was performed on the dataset representing the boat count in the ORC class from 2004 to 2023. The analysis aimed to identify the trend in yacht count over time and make predictions based on the linear relationship between the year and the number of yachts.
+
+The analysis revealed a significant upward trend in the boat count. The linear regression model showed a positive slope, indicating an increase in the number of boats in the ORC class as the years progressed. The plotted regression line demonstrates the model fits the data reasonably well.
+
+Based on the linear regression model, predictions were made for the boat count in future years. These predictions suggest a continued growth in the number of boats in the ORC class, following the established upward trend.
+
+It is important to note that the linear regression analysis provides an approximation and assumes a linear relationship between the year and the boat count. Other factors and variables not considered in this analysis may also influence the boat count in the ORC class.
+
+Overall, the linear regression analysis results provide insights into the historical trend and a basis for estimating the future boat count in the ORC class. However, further analysis and consideration of additional factors are recommended to help understand the underlying dynamics affecting the yacht count in the ORC class.
