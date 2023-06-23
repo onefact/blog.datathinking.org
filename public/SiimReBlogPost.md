@@ -32,4 +32,7 @@ In short, the following obstacles are encountered with the data:
 
 It must be acknowledged that even when data is available on official organization websites, obtaining it can be difficult and require additional effort. Finding the data, getting it in a suitable format, and cleaning it all need specific skills and tools. However, overcoming these challenges can unlock valuable insights and a deeper understanding of the dynamics within the field of study.
 
+### Data
+Getting the information from the official data to make the calculations was time-consuming and sometimes frustrating. The raw data is now processed here to make it easier for future applicants. Below are the files in CVS format, organized and with a similar structure (I repeat - it took time to convert to this format, and they were not immediately available on the official website).
+
 
