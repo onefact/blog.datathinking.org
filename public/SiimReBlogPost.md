@@ -142,3 +142,7 @@ Based on the linear regression model, predictions were made for the boat count i
 It is important to note that the linear regression analysis provides an approximation and assumes a linear relationship between the year and the boat count. Other factors and variables not considered in this analysis may also influence the boat count in the ORC class.
 
 Overall, the linear regression analysis results provide insights into the historical trend and a basis for estimating the future boat count in the ORC class. However, further analysis and consideration of additional factors are recommended to help understand the underlying dynamics affecting the yacht count in the ORC class.
+
+---
+
+Thanks for reading! I hope you found this data-driven analysis insightful. Stay tuned for more intriguing stories backed by data analysis!
